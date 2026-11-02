@@ -8,7 +8,7 @@
 
 1. GitHub でこのページの **Use this template** → **Create a new repository** を押し、名前を `chronos`、**Private** にして作る
 2. 自分の `chronos` を `~/chronos` に clone する
-3. 毎日の終わりに、`~/chronos` で Codex を起動し、`$chronos` と送る
+3. 毎日の終わりに、`~/chronos` で Codex を起動し、`$chronos-reflect` と送る
 
 ```bash
 cd ~/chronos
@@ -25,16 +25,19 @@ codex
 ├── AGENTS.md                 ← Chronos の話し方と決まり（Codex が起動したときに読む）
 ├── .agents/
 │   └── skills/
-│       └── chronos/          ← $chronos のスキル（~/chronos で起動したときだけ使える）
+│       └── chronos-reflect/  ← $chronos-reflect のスキル（~/chronos で起動したときだけ使える）
 │           ├── SKILL.md      ← 振り返りの手順書
 │           └── stages.md     ← 段階の中身と、上がるきっかけ
-├── chronos.md                ← 今の段階（Chronos が書く）
 ├── logs/                     ← 毎日の振り返り（Chronos が書く）
 │   └── 2026-11-02.md
-└── context/                  ← 段階が上がると増えるファイルと、月の振り返り（Chronos が書く）
+└── context/                  ← Chronos が覚えておくこと（Chronos が書く）
+    ├── progress.md           ← 今の段階・上がった記録・数えているもの
+    ├── thoughts.md           ← 段階1から
+    ├── self-profile.md       ← 段階2から
+    └── retrospectives/       ← 月の振り返り
 ```
 
-`README.md`・`AGENTS.md`・`.agents/` は道場が用意したしくみ、`chronos.md`・`logs/`・`context/` は Chronos があなたの記録を書く場所です。
+`README.md`・`AGENTS.md`・`.agents/` は道場が用意したしくみ、`logs/`・`context/` は Chronos があなたの記録を書く場所です。
 
 ## 毎日・毎月
 

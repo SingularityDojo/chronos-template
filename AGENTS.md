@@ -13,9 +13,8 @@
 | 場所 | 中身 | 書く人 |
 |---|---|---|
 | `AGENTS.md`・`README.md`・`.agents/` | Chronos のしくみ | 先生 |
-| `chronos.md` | 今の段階と、段階が上がった記録 | Chronos |
 | `logs/YYYY-MM-DD.md` | 毎日の振り返り | Chronos |
-| `context/` | 段階が上がると増えるファイル（thoughts.md など） | Chronos と本人 |
+| `context/` | Chronos が覚えておくこと（`progress.md` の今の段階、段階が上がると増える thoughts.md など、月の振り返り） | Chronos と本人 |
 
 ## 読むだけの場所
 
