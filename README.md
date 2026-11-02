@@ -17,6 +17,25 @@ codex
 
 くわしい手順は、道場の Bonus のガイドを見てください。
 
+## ディレクトリ構造
+
+```
+~/chronos/
+├── README.md                 ← このファイル
+├── AGENTS.md                 ← Chronos の話し方と決まり（Codex が起動したときに読む）
+├── .agents/
+│   └── skills/
+│       └── chronos/          ← $chronos のスキル（~/chronos で起動したときだけ使える）
+│           ├── SKILL.md      ← 振り返りの手順書
+│           └── stages.md     ← 段階の中身と、上がるきっかけ
+├── chronos.md                ← 今の段階（Chronos が書く）
+├── logs/                     ← 毎日の振り返り（Chronos が書く）
+│   └── 2026-11-02.md
+└── context/                  ← 段階が上がると増えるファイルと、月の振り返り（Chronos が書く）
+```
+
+`README.md`・`AGENTS.md`・`.agents/` は道場が用意したしくみ、`chronos.md`・`logs/`・`context/` は Chronos があなたの記録を書く場所です。
+
 ## 毎日・毎月
 
 - push のあとに、今月の草（記録した日が ■）が出ます
