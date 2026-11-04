@@ -8,11 +8,18 @@
 
 1. GitHub でこのページの **Use this template** → **Create a new repository** を押し、名前を `chronos`、**Private** にして作る
 2. 自分の `chronos` を `~/chronos` に clone する
-3. 毎日の終わりに、`~/chronos` で Codex を起動し、`$chronos-reflect` と送る
+3. `~/.bashrc` に、振り返りを1語で始めるシェル関数 `reflect` を足す（1回だけ）
+4. 毎日の終わりに、どこからでも `reflect` と打つ。`~/chronos` で Codex が起動し、`$chronos-reflect` が送られて振り返りが始まる。終えると元の場所に戻る
 
 ```bash
-cd ~/chronos
-codex
+cat >> ~/.bashrc <<'EOF'
+
+# ~/chronos で Codex を起動して、振り返りを始める（終えると元の場所に戻る）
+reflect() {
+  (cd ~/chronos && codex '$chronos-reflect')
+}
+EOF
+source ~/.bashrc
 ```
 
 くわしい手順は、道場の Bonus のガイドを見てください。
